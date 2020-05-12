@@ -1,0 +1,115 @@
+.sec_head {
+	padding: 8px; 
+	background-color: silver; 
+	font-size: 25px; 
+	color: white; 
+}
+/*Admin Dashboard Modal*/
+#show_brand_modal, #show_product_modal {
+	width: 20%; 
+}
+select{
+	display: block; 
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 0;
+}
+
+.main_box {
+	background: orange; 
+	margin-top: 15px; 
+}
+
+/*Design Product description page*/
+
+.list_imgs li{
+	display: inline;
+}
+.list_imgs li img {
+	height: 80px; 
+}
+.fa.fa-circle {
+	color: gray;
+	 font-weight: 10px; 
+}
+
+.PowerBank input {
+	width: 75%; 
+}
+
+.wrappercont {
+	background-color: rgba(0,0,0,0.1);
+	padding:10px 0; 
+}
+.wrappercont section  {
+	background: white;
+}
+.wrappercont section h5, .wrappercont section h6
+{
+	margin-left: 10px; 
+}
+.wrappercont section input {
+	width: 50%; 
+}
+
+#show_mobile_price, #show_mobile_percent, #show_mobile_quantity, #show_headphone_price, #show_headphone_percent, #show_headphone_quantity {
+	width: 20%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+ }
+
+  main {
+    flex: 1 0 auto;
+ }
+
+ .common_feild input[type="text"]
+ {
+ 	border-radius: 3px;
+    border: 1px solid #ddd; 
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7px 5px 7px 8px;
+    height: 1.5rem; 
+   	margin-top: 0; 
+   	margin-bottom: 0; 
+}
+.common_feild h5 {
+	font-size: 12px; 
+}
+
+.listing-main .category p {
+	display: inline;
+}
+
+.listing-main h5 {
+	background-color: orange; 
+	padding: 10px; 
+}
+.before_sub input[type="number"] {
+	border: 1px solid gray;
+    display: inline;
+    width: 50px;
+    padding: 5px;
+}
+
+.auction {
+	border: 1px solid grey;
+	padding: 15px;
+	width: 250px;  
+}
+
+.auction input[type="number"] {
+	border-radius: 3px;
+    border: 1px solid #ddd; 
+    height: 2rem; 
+   	
+}
+
+.card .card-content {
+    padding: 5px !important;
+    border-radius: 0 0 2px 2px;
+}
