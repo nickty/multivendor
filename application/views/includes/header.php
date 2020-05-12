@@ -61,7 +61,7 @@
 	</div>
 
 	<!-- navbar section -->
-	<nav>
+	<nav class="navbar-fixed">
 		<div class="container">
 		<div class="nav-wrapper">
 			<a href="<?= base_url('index.php/Home/index'); ?>" class="brand-logo left">Multi Vendor Shop</a>
@@ -80,7 +80,7 @@
 				
 			</ul>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="">Cart</a></li>
+				<li><a href="">Cart (<span id="cart">0</span>)</a></li>
 				<li><a href="">Sign Up</a></li>
 				<li><a href="">Login</a></li>
 			</ul>

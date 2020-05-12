@@ -50,6 +50,7 @@
   <script type="text/javascript" src="<?= base_url('asset/js/jquery.js'); ?>"></script>
   <script type="text/javascript" src="<?= base_url('asset/js/materialize.js'); ?>"></script>
   <script type="text/javascript" src="<?= base_url('asset/fonts/js/all.js'); ?>"></script>
+  <script type="text/javascript" src="<?= base_url('asset/js/common.js'); ?>"></script>
 
   <script type="text/javascript">
     $(document).ready(function(){

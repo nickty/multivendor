@@ -129,7 +129,7 @@
         
         	<a href="<?= base_url().'home/single_product/'.$product['id']; ?>" class="btn orange" style="width: 100%;">View More</a>
 	    
-	    	<a class="btn" style="width: 100%;">Add to Cart</a>
+	    	<a class="btn cart" id="pr<?= $product['id']; ?>" style="width: 100%;">Add to Cart</a>
 	    
 	    
         
@@ -177,7 +177,7 @@
         
         	<a class="btn orange" style="width: 100%;">View More</a>
 	    
-	    	<a class="btn" style="width: 100%;">Add to Cart</a>
+	    	<a class="btn cart" id="pr<?= $product['id']; ?>" style="width: 100%;">Add to Cart</a>
 	    
 	    
         
@@ -224,7 +224,7 @@
         
         	<a class="btn orange" style="width: 100%;">View More</a>
 	    
-	    	<a class="btn" style="width: 100%;">Add to Cart</a>
+	    	<a class="btn cart" id="pr<?= $product['id']; ?>" style="width: 100%;">Add to Cart</a>
 	    
 	    
         
@@ -270,7 +270,7 @@
         
         	<a class="btn orange" style="width: 100%;">View More</a>
 	    
-	    	<a class="btn" style="width: 100%;">Add to Cart</a>
+	    	<a class="btn cart" id="pr<?= $product['id']; ?>" style="width: 100%;">Add to Cart</a>
 	    
 	    
         
@@ -316,7 +316,7 @@
         
         	<a class="btn orange" style="width: 100%;">View More</a>
 	    
-	    	<a class="btn" style="width: 100%;">Add to Cart</a>
+	    	<a class="btn cart" id="pr<?= $product['id']; ?>" style="width: 100%;">Add to Cart</a>
 	    
 	    
         
@@ -361,7 +361,7 @@
         
         	<a class="btn orange" style="width: 100%;">View More</a>
 	    
-	    	<a class="btn" style="width: 100%;">Add to Cart</a>
+	    	<a class="btn cart" id="pr<?= $product['id']; ?>" style="width: 100%;">Add to Cart</a>
 	    
 	    
         
