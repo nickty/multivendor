@@ -56,36 +56,41 @@
 <body>
 	<div id="top-bar" class="hide-on-med-and-down">
 		<div class="container">
-		<span class="white-text"><span class="fa fa-phone"></span>  1234567890     |     <span class="fa fa-envelope"></span>  info@shop.com</span><span class="right white-text"><span class="fa fa-gift"></span>  Gift Card     |     Sell On Shop   </span>
-	</div>
+			<span class="white-text"><span class="fa fa-phone"></span>  1234567890     |     <span class="fa fa-envelope"></span>  info@shop.com</span><span class="right white-text"><span class="fa fa-gift"></span>  Gift Card     |     Sell On Shop   </span>
+		</div>
 	</div>
 
 	<!-- navbar section -->
-	<nav class="navbar-fixed">
+	<nav>
 		<div class="container">
-		<div class="nav-wrapper">
-			<a href="<?= base_url('index.php/Home/index'); ?>" class="brand-logo left">Multi Vendor Shop</a>
-			<?= form_open(); ?>
-			<input type="text" id="set_search" placeholder="Search for Product or Brand" class="hide-on-med-and-down" name="search">
-			<button type="submit" id="set_btn_search" class="btn waves-effect waves-light hide-on-med-and-down">Search</button>
-			<?= form_close(); ?>
-			<a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-			<ul id="slide-out" class="sidenav text-black">
-				<li class="orange"><a href="#!">Product Categories</a></li>
-				<li><a href="<?= base_url('home/electronics'); ?>">Electronics</a></li>
-				<li><a href="<?= base_url('index.php/Home/mmenfasion'); ?>">Men Fashion</a></li>
-				<li><a href="<?= base_url('index.php/Home/wmmenfasion'); ?>">Women Fashion</a></li>
-				<li><a href="#!">Home $ Furniture</a></li>
-				<li><a href="#!">Sports</a></li>
-				
-			</ul>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="">Cart (<span id="cart">0</span>)</a></li>
-				<li><a href="">Sign Up</a></li>
-				<li><a href="">Login</a></li>
-			</ul>
+			<div class="nav-wrapper">
+				<a href="<?= base_url('index.php/Home/index'); ?>" class="brand-logo left">Multi Vendor Shop</a>
+				<?= form_open(); ?>
+				<input type="text" id="set_search" placeholder="Search for Product or Brand" class="hide-on-med-and-down" name="search">
+				<button type="submit" id="set_btn_search" class="btn waves-effect waves-light hide-on-med-and-down">Search</button>
+				<?= form_close(); ?>
+				<a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+				<ul id="slide-out" class="sidenav text-black">
+					<li class="orange"><a href="#!">Product Categories</a></li>
+					<li><a href="<?= base_url('home/electronics'); ?>">Electronics</a></li>
+					<li><a href="<?= base_url('index.php/Home/mmenfasion'); ?>">Men Fashion</a></li>
+					<li><a href="<?= base_url('index.php/Home/wmmenfasion'); ?>">Women Fashion</a></li>
+					<li><a href="#!">Home $ Furniture</a></li>
+					<li><a href="#!">Sports</a></li>
+
+				</ul>
+				<ul class="right hide-on-med-and-down">
+					<!-- <li><a href="">Cart (<span id="cart">0</span>)</a></li> -->
+					<li><a class="btn tooltipped" id="tool" data-html='true' data-tooltip="Add More Products to See Cart">Cart (<span id="cart">0</span>)</a></li>
+					<li><a href="">Sign Up</a></li>
+					<li><a href="">Login</a></li>
+				</ul>
+
+				<!-- data-position can be : bottom, top, left, or right -->
+					<!-- data-tooltip defines the tooltip text -->
+					
+			</div>
 		</div>
-	</div>
 	</nav>
 	<!-- navbar seciton -->
 

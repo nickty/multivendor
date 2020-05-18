@@ -4434,9 +4434,9 @@ $jscomp.polyfill = function (e, r, p, m) {
   'use strict';
 
   var _defaults = {
-    exitDelay: 200,
+    exitDelay: 5000,
     enterDelay: 0,
-    html: null,
+    html: 'true',
     margin: 5,
     inDuration: 250,
     outDuration: 200,

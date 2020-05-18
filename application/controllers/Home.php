@@ -78,4 +78,25 @@ class Home extends CI_Controller {
 		$this->load->view('home/single_product', $data);
 		$this->load->view('includes/footer');
 	}
+
+	public function checkout()
+	{
+		$this->load->view('includes/header');
+		$this->load->view('home/checkout');
+		$this->load->view('includes/cart_footer');
+	}
+
+	public function orders()
+	{
+		$result = $this->db->insert('orders', $_POST);
+
+		if ($result) {
+			return true; 
+		} else 
+		{
+			return false; 
+		}
+
+		
+	}
 }

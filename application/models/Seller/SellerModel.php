@@ -188,5 +188,6 @@ class SellerModel extends CI_Model
 		}
 	}
 
+	
 
 }

@@ -70,6 +70,6 @@
         
     }); 
   </script>
-  <script type="text/javascript" src="<?= base_url('asset/js/common.js'); ?>"></script>
+  <script type="text/javascript" src="<?= base_url('asset/js/cart.js'); ?>"></script>
 </body>
 </html>
