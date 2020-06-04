@@ -116,6 +116,8 @@ $config['enable_hooks'] = FALSE;
 */
 $config['subclass_prefix'] = 'database';
 
+$config['composer_autoload'] = FALSE;
+
 
 /*
 |--------------------------------------------------------------------------
