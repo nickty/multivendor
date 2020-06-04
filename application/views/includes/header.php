@@ -64,11 +64,14 @@
 	<nav>
 		<div class="container">
 			<div class="nav-wrapper">
-				<a href="<?= base_url('index.php/Home/index'); ?>" class="brand-logo left">Multi Vendor Shop</a>
-				<?= form_open(); ?>
-				<input type="text" id="set_search" placeholder="Search for Product or Brand" class="hide-on-med-and-down" name="search">
+				<a href="<?= base_url('index.php/Home/index'); ?>" class="brand-logo left">Prods</a>
+				<form id="search_prods">
+				<input type="text" id="set_search" placeholder="Search for Product or Brand" class="hide-on-med-and-down" name="set_search">
 				<button type="submit" id="set_btn_search" class="btn waves-effect waves-light hide-on-med-and-down">Search</button>
-				<?= form_close(); ?>
+				</form>
+				<div id="prods_list" style="display: none;">
+					
+				</div>
 				<a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 				<ul id="slide-out" class="sidenav text-black">
 					<li class="orange"><a href="#!">Product Categories</a></li>

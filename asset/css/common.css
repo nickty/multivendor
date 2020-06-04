@@ -116,3 +116,16 @@ body {
 .cart {
 	width: 100%;
 }
+
+.prods_list {
+	background-color: black; 
+	position: relative;
+}
+.list_item {
+	background: #eee !important; 
+	z-index: 999; 
+	position: absolute;
+}
+.list_item li {
+	display: block !important; 
+}

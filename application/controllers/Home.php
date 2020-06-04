@@ -70,7 +70,7 @@ class Home extends CI_Controller {
 	public function single_product($id)
 	{
 
-	 
+
 
 		$data['result'] = $this->nm->select_data('all_listing', '*', array('id'=>$id));
 
@@ -98,5 +98,45 @@ class Home extends CI_Controller {
 		}
 
 		
+	}
+
+	public function search()
+	{
+		//return $_POST['query']; 
+
+		// $data['hh'] = "SELECT * FROM all_listing WHERE title LIKE '%".$_POST["query"]."%'";
+		$result = $this->nm->select_data('all_listing', '*');
+		// //$result = $data->result(); 
+		// $output = "<ul class='list_item'>"; 
+		
+		// $s = sizeof($result);
+
+		//$query = $db->query("SELECT * FROM all_listing");
+
+		// $this->db->select('*');
+		// $this->db->from('all_listing');
+		// $this->db->like('title', $_POST['query']);
+		// $query = $this->db->get();  
+
+		// return $query->num_rows(); 
+
+		
+		$output = "<ul class='list_item'>";
+		// for ($i=0; $i < $s ; $i++) { 
+		// 	$output .='<li>'.$hh.'</li>'; 
+		// }
+
+		foreach ($result as $row)
+		{
+			$output .='<li>'.$row['title'].'</li>'; 
+		}
+
+		$output .= "</ul>";
+
+		echo $output; 
+
+		if ($output == '') {
+			return false; 
+		}
 	}
 }

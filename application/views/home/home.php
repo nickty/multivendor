@@ -116,13 +116,13 @@
 			<?php foreach($electronic as $product) : ?>
 
 				<div class="col l2 s6 m4">
-					<div class="card"  style="height: 280px;">
+					<div class="card">
 						<div class="card-image">
 							<img style="height: 120px;" src="<?= base_url().'imgs/products/'.$product['mobile_image_0']; ?>" class="responsive-img">
 
 						</div>
 						<div class="card-content">
-							<span class="card-title" id="namepr<?= $product['id']; ?>" style="font-size: 16px;"><?= substr($product['title'], 0, 20);  ?></span>
+							<span class="card-title" id="namepr<?= $product['id']; ?>" style="font-size: 13px;"><?= substr($product['title'], 0, 20);  ?></span>
 							<h6 class="orange-text left"><span id="pricepr<?= $product['id']; ?>"><?= $product['price']; ?></span> Taka</h6>
 
 						</div>

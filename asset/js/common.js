@@ -1349,7 +1349,7 @@ function updateCart(cart) {
     var sum = 0;
     for (var item in cart) {
         sum = sum + cart[item][0];
-        document.getElementById('div' + item).innerHTML="<center><button id='minus" + item + "' class='btn minus'>-</button><span id='val" + item + "''>" + cart[item][0] + "</span> <button id='plus" + item + "' class='btn plus'> + </button></center>";
+        document.getElementById('div' + item).innerHTML="<center><button style='width: 100%' id='minus" + item + "' class='btn minus'>-</button><span id='val" + item + "''>" + cart[item][0] + "</span> <button style='width: 100%' id='plus" + item + "' class='btn plus'> + </button></center>";
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -1366,7 +1366,7 @@ $('.divpr').on("click", "button.minus", function() {
     cart['pr' + a][0] = Math.max(0, cart['pr' + a][0]);
     //document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
     if (cart['pr'+a][0]==0) {
-    	document.getElementById('divpr'+a).innerHTML = '<center><button id="pr'+a+'" class="btn cart">Add to cart</button></center>';
+    	document.getElementById('divpr'+a).innerHTML = '<button id="pr'+a+'" style="width: 100%" class="btn cart">Add to cart</button>';
     	delete cart['pr'+a];
     } else 
     {
@@ -1381,6 +1381,31 @@ $('.divpr').on("click", "button.plus", function() {
     updateCart(cart);
 });
 
-
+// search functionality 
+$('#search_prods').keyup(function(){
+	var query = $('#set_search').val(); 
+// alert(query); 
+// return false; 
+	if(query != '')
+	{
+		$.ajax({
+			url: "search", 
+			method: "POST",
+			data:{query:query}, 
+			success:function(data){
+				// alert(data); 
+				// return false; 
+				$('#prods_list').fadeIn(); 
+				$('#prods_list').html(data); 
+			}, 
+			error:function()
+			{
+				alert('not found'); 
+				return false;
+				$('#prods_list').html('No recoreds found');
+			}
+		}); 
+	} 
+}); 
  
 
