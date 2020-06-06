@@ -64,6 +64,10 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
+// $db['default']['username'] = 'khujfsht_root';
+// $db['default']['password'] = 'Nick126721';
+// $db['default']['database'] = 'khujfsht_multivendor';
+
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
