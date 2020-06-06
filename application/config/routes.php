@@ -41,7 +41,7 @@
 // $route['default_controller'] = "home";
 // $route['404_override'] = '';
 
-$route['default_controller'] = 'home';
+$route['default_controller'] = '';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
